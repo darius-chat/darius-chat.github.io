@@ -28,12 +28,20 @@
     render: function() {
       this.scrollToBottom();
       if (this.messageToSend.trim() !== '') {
+        
+       
+        
+        
+        
+        
         var template = Handlebars.compile( $("#message-template").html());
         var context = { 
           messageOutput: this.messageToSend,
           time: this.getCurrentTime()
         };
 
+        
+        
         this.$chatHistoryList.append(template(context));
         this.scrollToBottom();
         this.$textarea.val('');
