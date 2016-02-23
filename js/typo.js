@@ -1,7 +1,29 @@
-var code = (e.keyCode ? e.keyCode : e.which);
-   if(code == 13) { //Enter keycode
-     alert('enter press');
- }
+$('#envoyer').on('click',function() {
+
+  var x = document.getElementsByClassName("other-message");
+  
+  
+  var i=0;
+  
+  while(i<x.length){
+    myFunction(i,"other-message");
+    i++;
+  }
+});
+
+$('#message-to-send').keypress(function (e) {
+ var x = document.getElementsByClassName("other-message");
+  
+  
+  var i=0;
+  
+  while(i<x.length){
+    myFunction(i,"other-message");
+    i++;
+  }
+});
+
+
 
 
 $('#message-to-send').on('input', function() {
@@ -19,7 +41,7 @@ $('#message-to-send').on('input', function() {
   
   while(i<x.length){
     myFunction(i,"other-message");
-    i++
+    i++;
   }
 
   
