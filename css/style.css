@@ -38,6 +38,22 @@ font-weight: normal;
 font-style: normal;
 }
 
+.joie{
+  font: 14px/20px Joie, Helvetica, Arial, sans-serif;
+}
+
+.angoisse{
+  font: 14px/20px Angoisse, Helvetica, Arial, sans-serif;
+}
+
+.tristesse{
+  font: 14px/20px Tristesse, Helvetica, Arial, sans-serif;
+}
+
+.colere{
+  font: 14px/20px Colere, Helvetica, Arial, sans-serif;
+}
+
 
 body {
   background: #A8EBFF;
