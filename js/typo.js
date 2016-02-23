@@ -12,8 +12,10 @@ $('#envoyer').on('click',function() {
 });
 
 $('#message-to-send').keypress(function (e) {
- var x = document.getElementsByClassName("other-message");
   
+
+  
+  var x = document.getElementsByClassName("other-message");
   
   var i=0;
   
