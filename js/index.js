@@ -69,7 +69,7 @@
     addMessageEnter: function(event) {
         // enter was pressed
         if (event.keyCode === 13) {
-          this.addMessage();
+          //this.addMessage();
         }
     },
     scrollToBottom: function() {

@@ -204,6 +204,7 @@
 
         <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
         <i class="fa fa-file-image-o"></i>
+        <label id="labelkrom">Texte émotif:  <input type="checkbox" id="cbox1" value="premiere_checkbox"></label>
 
         <button id="envoyer">Envoyer</button>
 
@@ -222,9 +223,10 @@
         <span class="message-data-time">{{time}}, Today</span> &nbsp; &nbsp;
         <span class="message-data-name">Darius</span> <i class="fa fa-circle me"></i>
       </div>
-      <div class="message other-message float-right">
+      <div class="message other-message float-right">{{class}}
         {{messageOutput}}
-        {{class}}
+        {{messageFin}}
+        
       </div>
     </li>
   </script>

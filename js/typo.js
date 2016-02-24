@@ -37,8 +37,6 @@ $('#message-to-send').on('input', function() {
   
   //var variablelol = document.getElementByClassName("message");
 
-  //console.log(x[1].innerText);
-  
   var i=0;
   
   while(i<x.length){
@@ -53,7 +51,7 @@ $('#message-to-send').on('input', function() {
    newclassic="";
    texte_saisi = x[i].innerText;
    
-   console.log(texte_saisi);
+   
    
    // Joie
 
@@ -112,7 +110,7 @@ $('#message-to-send').on('input', function() {
         newclassic = " a  ngoisse";
       }
       
-   console.log(newclassic);
+
    x[i].className += newclassic;
    
    i++;
@@ -120,16 +118,19 @@ $('#message-to-send').on('input', function() {
  }*/
   
 // (x[i].innerText.length > 0){
-/*   console.log(i);
+/*  
    i++;
  }*/
     
 
   
-   // console.log($variablelol.each);
     
-    // on récupère le texte saisi
+  var remember = document.getElementById('cbox1');
+
+  if (remember.checked){
+     // on récupère le texte saisi
     var texte_saisi = document.getElementById("message-to-send").value;
+  var box = document.getElementById("message-to-send");
     
       // Joie
 
@@ -145,8 +146,50 @@ $('#message-to-send').on('input', function() {
            (texte_saisi.toLowerCase().indexOf("=)") >= 0)
           )
       {
-        document.getElementById("message-to-send").style.fontFamily = "Joie";
+        document.getElementById("message-to-send").style.fontFamily = "Joie";      
+        
+        
+        
       }
+  
+/*  if(texte_saisi.toLowerCase().indexOf(":)") >= 0){
+    box.value=box.value.replace(":)","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":-)") >= 0){
+    box.value=box.value.replace(":-)","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":^)") >= 0){
+    box.value=box.value.replace(":^)","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":]") >= 0){
+    box.value=box.value.replace(":]","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":-]") >= 0){
+    box.value=box.value.replace(":-]","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf("=)") >= 0){
+    box.value=box.value.replace("=)","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":(") >= 0){
+    box.value=box.value.replace(":(","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":-(") >= 0){
+    box.value=box.value.replace(":-(","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":-[") >= 0){
+    box.value=box.value.replace(":-[)","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":[") >= 0){
+    box.value=box.value.replace(":[","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":s") >= 0){
+    box.value=box.value.replace(":s","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":@") >= 0){
+    box.value=box.value.replace(":@","");;}
+  
+  if(texte_saisi.toLowerCase().indexOf(":-@") >= 0){
+    box.value=box.value.replace(":-@","");;}*/
   
   // Tristesse
 
@@ -168,8 +211,7 @@ $('#message-to-send').on('input', function() {
 
       if ((texte_saisi.toLowerCase().indexOf(":@") >= 0) ||
           (texte_saisi.toLowerCase().indexOf(":-@") >= 0) || 
-          (texte_saisi.toLowerCase().indexOf("?!") >= 0) ||         
-           (texte_saisi.toLowerCase().indexOf("=)") >= 0)
+          (texte_saisi.toLowerCase().indexOf("?!") >= 0)
           )
       {
         document.getElementById("message-to-send").style.fontFamily = "Colere";
@@ -181,13 +223,15 @@ $('#message-to-send').on('input', function() {
           (texte_saisi.toLowerCase().indexOf("..!") >= 0) || 
           (texte_saisi.toLowerCase().indexOf("...!") >= 0) ||
           (texte_saisi.toLowerCase().indexOf("!..") >= 0) ||
-          (texte_saisi.toLowerCase().indexOf("!...") >= 0) ||        
-           (texte_saisi.toLowerCase().indexOf("=)") >= 0)
+          (texte_saisi.toLowerCase().indexOf("!...") >= 0)
           )
       {
         document.getElementById("message-to-send").style.fontFamily = "Angoisse";
       }
       
+  }
+  
+   
       
       
 });
@@ -198,7 +242,6 @@ function myFunction(i,className){
   
   //var variablelol = document.getElementByClassName("message");
 
-  //console.log(x[1].innerText);
 
   
   var newclassic;
@@ -206,9 +249,7 @@ function myFunction(i,className){
  while(i<x.length){
    newclassic="";
    texte_saisi = x[i].innerText;
-   
-   console.log(texte_saisi);
-   
+
    // Joie
 
       if ((texte_saisi.toLowerCase().indexOf(":)") >= 0) ||
@@ -266,7 +307,7 @@ function myFunction(i,className){
         newclassic = " angoisse";
       }
       
-   console.log(newclassic);
+ 
    x[i].className += newclassic;
    
    i++;
