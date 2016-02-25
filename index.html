@@ -159,9 +159,20 @@
               <span class="message-data-time">10:12, Aujourd'hui</span>
             </div>
             <div class="message my-message">
-              Oui et toi ? Je travaille sur mon projet de chat
+              Oui et toi ?
             </div>
           </li>
+
+            <li class="clearfix">
+                <div class="message-data align-right">
+                    <span class="message-data-time">10:13, Aujourd'hui</span> &nbsp; &nbsp;
+                    <span class="message-data-name">Darius</span> <i class="fa fa-circle me"></i>
+
+                </div>
+                <div class="message other-message float-right">
+                    Ok cool! Voici une nouvelle interface de chat, elle te plait ?
+                </div>
+            </li>
 <!--
           <li class="clearfix">
             <div class="message-data align-right">
@@ -220,7 +231,7 @@
   <script id="message-template" type="text/x-handlebars-template">
     <li class="clearfix">
       <div class="message-data align-right">
-        <span class="message-data-time">{{time}}, Today</span> &nbsp; &nbsp;
+        <span class="message-data-time">{{time}}, Aujourd'hui</span> &nbsp; &nbsp;
         <span class="message-data-name">Darius</span> <i class="fa fa-circle me"></i>
       </div>
       <div class="message other-message float-right">{{class}}
@@ -235,7 +246,7 @@
     <li>
       <div class="message-data">
         <span class="message-data-name"><i class="fa fa-circle online"></i> Tupac</span>
-        <span class="message-data-time">{{time}}, Today</span>
+        <span class="message-data-time">{{time}}, Aujourd'hui</span>
       </div>
       <div class="message my-message">
         {{response}}
